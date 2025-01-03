@@ -42,8 +42,9 @@ int main() {
         v8::Context::Scope context_scope(context);
 
         
+        RunScript(isolate, script)
 
-        RunScript(isolate, script);
+        
     }
 
     isolate->Dispose();
